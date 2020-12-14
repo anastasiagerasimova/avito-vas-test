@@ -1,0 +1,68 @@
+.radiogroup{
+    padding: 0;
+    margin: 0;
+}
+
+.radiogroup li{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.radiogroup li div{
+    margin-right: .5rem;
+    width: auto;
+}
+
+.radiogroup li div:last-child{
+    margin-right: 0;
+}
+
+.radiogroup input{
+    width: 0;
+    height: 0;
+    position: absolute;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+}
+
+.radiogroup input + label {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.radiogroup input + label:hover {
+    background: #f1f4f8;
+}
+ 
+.radiogroup input:checked + label{
+    width: 90px;
+    height: 31px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    background: #f1f4f8;
+    font-size: .8125rem;
+    line-height: 1.75rem;
+    color: #3d4853;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+} 
+
+.radiogroup input:not(checked) + label{
+    width: 90px;
+    height: 31px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    background: transparent;
+    font-size: .8125rem;
+    line-height: 1.75rem;
+    color: #3d4853;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+} 

@@ -1,0 +1,16 @@
+.input {
+    margin-bottom: .8rem;
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    width: 100%;
+}
+
+.input input, .input label{
+    cursor: pointer;
+}
+
+.input input:focus{
+    border-color: rgba(249, 228, 71, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(249, 229, 71, 0.25);
+}

@@ -1,0 +1,87 @@
+.form{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 370px;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(150, 150, 146, 0.582);
+    background: #fff;
+    z-index: 100;
+    overflow-y: auto;
+}
+
+.form legend{
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: Poppins,sans-serif;
+    color: #3d4853;
+}
+
+.form input[name=bg]{
+    width: 0;
+    height: 0;
+    position: absolute;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+}
+
+.form input[name=bg] + label {
+   padding-left: 42px;
+   margin-top: .7rem;
+   margin-bottom: 0;
+   line-height: 32px;
+   cursor: pointer;
+}
+
+.form input[name=bg]:not(checked) + label {
+    position: relative; 
+}
+
+.form input[name=bg]:checked + label:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 2px;
+    box-sizing: border-box;
+    border: 1px solid #ced4da;
+    cursor: pointer;
+}
+
+.form input[name=bg]:checked + label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    transform: translate(-50%, -50%);
+    width: 18px;
+    height: 20px;
+    border-radius: 2px;
+    background-color: #f9e547;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.form input[name=bg]:not(checked) + label:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 2px;
+    box-sizing: border-box;
+    border: 1px solid #ced4da;
+    cursor: pointer;
+}
